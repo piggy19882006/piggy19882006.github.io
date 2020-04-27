@@ -433,6 +433,7 @@
 				 <option value="2">2020年02月07日</option>
 				 <option value="3">2020年03月06日</option>
                                  <option value="4">2020年04月07日</option>
+				 <option value="5">2020年04月16日</option>
                </select>
 			</div>
 			<div class="col-md-2">
@@ -467,7 +468,7 @@
 	    var v = document.getElementById('date').value;
 		switch (parseInt(v))
          {
-         case 1:
+                 case 1:
             altizureLink = "https://www.altizure.cn/project-model?pid=5e00827f36c6ad6d02debe66&embed=true";
             break;
 		 case 2:
@@ -479,6 +480,9 @@
 	          case 4:
             altizureLink = "http://gz.altizure.info:31391/project-model?pid=5e915e9fad17e20023c5bda9&render=texture&campose=false&embed=true&share=off&view_mode=off&";
             break;
+		  case 5:
+            altizureLink = "http://gz.altizure.info:31391/project-model?pid=5e9c1e44c6921a0047f69474&render=texture&campose=false&embed=true&share=off&view_mode=off&";
+            break;	 
          }
         document.getElementById('test').src = altizureLink;
 		}
